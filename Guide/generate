@@ -1,0 +1,4 @@
+#!/bin/sh
+
+python3 -m zxngdefmt asm.ugde -o .
+python3 -m zxngdefmt asm.ugde -r > asm.txt
