@@ -245,7 +245,7 @@ End a relocation block. The assembler will stop tracking relocations.
 Start a relocation block. The assembler will start tracking relocations at this point until the block is terminated using [RELOC_END](#reloc_end) blocks.
 
 ## RELOC_TABLE
-Emits the relocation table. This is a raw dump of the high byte of every address that needs to be patched to relocate the code. The format of this table is specifically designed to support the creation of NextZXOS Drivers.
+Emits the relocation table, a raw list of the high byte addresses that must be patched when relocating the code. The format of the table is specifically designed to support the creation of NextZXOS Drivers.
 
 ## SAVENEX
 Generated a NEX file from the assembled code. You need to use the [BANK](#bank) pseudo-op to explicitly indicate which banks should be included in the NEX file.
