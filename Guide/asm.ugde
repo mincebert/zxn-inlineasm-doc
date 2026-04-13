@@ -112,7 +112,7 @@ See also: @{" INCLUDE " LINK INCLUDE}, @{" OUTPUT " LINK OUTPUT}
 Lines of assembly embedded within NextBASIC programs using @{b}.asm@{ub} have
 the form:
 
- @{i}line-number@{ui} @{b};@{ub}[[@{i}label@{ui}[@{b}:@{ub}]][ @{i}inst@{ui}[:...]][@{b};@{ub}@{i}comment@{ui}]]
+ @{i}line-number@{ui} @{b};@{ub}[[@{i}label@{ui}[@{b}:@{ub}]][ @{i}inst@{ui}[@{b}:@{ub}...]][@{b};@{ub}@{i}comment@{ui}]]
 
 The '@{b};@{ub}' character is part of NextBASIC itself and indicates a comment
 (same as @{b}REM@{ub}), so NextBASIC itself won't try and execute the line (see
