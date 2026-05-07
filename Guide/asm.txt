@@ -511,6 +511,10 @@ Define a constant:
 Defines the constant name to the numeric value of the result of evaluating the
 <expression> expr.
 
+Note that name must be written immediately at the beginning of a line, without a
+space between it and the ';' or start of the line, in the same manner as a
+<label>.
+
 See also: <LET>
 
 ---[ IF ]----------------------------------------------------------------------

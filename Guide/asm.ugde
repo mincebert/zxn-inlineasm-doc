@@ -519,6 +519,10 @@ Define a constant:
 Defines the constant @{i}name@{ui} to the numeric value of the result of
 evaluating the @{" expression " LINK EXPRESSIONS} @{i}expr@{ui}.
 
+Note that @{i}name@{ui} must be written immediately at the beginning of a line,
+without a space between it and the '@{b};@{ub}' or start of the line, in the
+same manner as a @{" label " LINK LABELS}.
+
 See also: @{" LET " LINK LET}
 @----------------------------------------------------------------------------
 @node IF
