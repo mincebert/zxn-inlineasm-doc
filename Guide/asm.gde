@@ -2,7 +2,7 @@
 @author Robert Franklin
 @copyright Copyright (C) 2026 Chris Taylor - taylorza
 @version 0.8
-@date 2026/04/12
+@date 2026/05/08
 @index INDEX
 @-------------------------------------------------------------------------------
 @node MAIN
@@ -17,8 +17,8 @@ from a source text file.
 
 Running @{b}.asm@{ub}:
 
- * @{" Assembling inline code in a NextBASIC program " LINK ASM_INLINE}
- * @{" Assembling code from a file " LINK ASM_FILE}
+ @{" Assembling inline code in a NextBASIC program " LINK ASM_INLINE}
+ @{" Assembling code from a file " LINK ASM_FILE}
 
 Reference:
 

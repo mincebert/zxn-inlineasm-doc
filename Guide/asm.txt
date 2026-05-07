@@ -10,8 +10,8 @@ from a source text file.
 
 Running .asm:
 
- * <Assembling inline code in a NextBASIC program>
- * <Assembling code from a file>
+ <Assembling inline code in a NextBASIC program>
+ <Assembling code from a file>
 
 Reference:
 
