@@ -117,7 +117,7 @@ See also: @{" INCLUDE " LINK INCLUDE}, @{" OUTPUT " LINK OUTPUT}
 
 Lines of assembly embedded within NextBASIC programs using @{b}.asm@{ub} have the form:
 
- @{i}line-number@{ui} @{b};@{ub}[[@{i}label@{ui}[@{b}:@{ub}]][ @{i}inst@{ui}[@{b}:@{ub}...]][@{b};@{ub}@{i}comment@{ui}]]
+ @{i}line-number@{ui} @{b};@{ub}{[[@{i}label@{ui}[@{b}:@{ub}]][ @{i}inst@{ui}[@{b}:@{ub}...]][@{b};@{ub}@{i}comment@{ui}]]|@{i}name@{ui} @{b}EQU@{ub} @{i}expr@{ui}}
 
 The '@{b};@{ub}' character is part of NextBASIC itself and indicates a comment (same as
 @{b}REM@{ub}), so NextBASIC itself won't try and execute the line (see
@@ -132,6 +132,9 @@ any leading spaces between '@{b};@{ub}' and it (or at the beginning of the line,
 case of reading from a file).  It can optionally be followed by a trailing '@{b}:@{ub}'
 (colon) on preference of style.  A @{i}label@{ui} can only be specified before the first
 instruction in a line.
+
+When defining a constant with @{" EQU " LINK EQU}, the @{i}name@{ui} of the constant must be specified
+at the beginning of the line, without any leading spaces, same as a @{i}label@{ui}.
 
 @{h2}Instructions
 
@@ -548,7 +551,7 @@ Defines the constant @{i}name@{ui} to the numeric value of the result of evaluat
 
 Note that @{i}name@{ui} must be written immediately at the beginning of a line, without a
 space between it and the '@{b};@{ub}' or start of the line, in the same manner as a
-@{" label " LINK LABELS}.
+@{" label " LINK LABELS}.  See @{" line format " LINK FORMAT} for more information.
 
 See also: @{" LET " LINK LET}
 @-------------------------------------------------------------------------------

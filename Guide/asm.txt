@@ -104,7 +104,7 @@ Line format
 
 Lines of assembly embedded within NextBASIC programs using .asm have the form:
 
- line-number ;[[label[:]][ inst[:...]][;comment]]
+ line-number ;{[[label[:]][ inst[:...]][;comment]]|name EQU expr}
 
 The ';' character is part of NextBASIC itself and indicates a comment (same as
 REM), so NextBASIC itself won't try and execute the line (see
@@ -119,6 +119,9 @@ any leading spaces between ';' and it (or at the beginning of the line, in the
 case of reading from a file).  It can optionally be followed by a trailing ':'
 (colon) on preference of style.  A label can only be specified before the first
 instruction in a line.
+
+When defining a constant with <EQU>, the name of the constant must be specified
+at the beginning of the line, without any leading spaces, same as a label.
 
 Instructions
 
@@ -513,7 +516,7 @@ Defines the constant name to the numeric value of the result of evaluating the
 
 Note that name must be written immediately at the beginning of a line, without a
 space between it and the ';' or start of the line, in the same manner as a
-<label>.
+<label>.  See <line format> for more information.
 
 See also: <LET>
 
