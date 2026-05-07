@@ -254,6 +254,7 @@ An expression can make use of various values in calculating an expression:
 
  * literal values
  * <labels> - corresponding to the address of the label
+ * constants - defined with <EQU>
  * '$' - the current instruction address / program counter
  * '%var' - NextBASIC integer variable values
 
@@ -290,7 +291,7 @@ bracketed expression, and raise a Syntax error.
 This can be resolved by rewriting the expression, or using a character other
 than a bracket as the parameter to the instruction, for example: "CP 0+(1+2)*3".
 
-See also: <EQU>, <LET>, <VAR>
+See also: <LET>, <VAR>
 
 ---[ PSEUDO_OPS ]--------------------------------------------------------------
 

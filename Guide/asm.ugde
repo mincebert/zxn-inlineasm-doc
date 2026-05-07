@@ -266,6 +266,7 @@ An expression can make use of various values in calculating an expression:
 
  * literal values
  * @{" labels " LINK LABELS} - corresponding to the address of the label
+ * constants - defined with @{" EQU " LINK EQU}
  * '@{b}$@{ub}' - the current instruction address / program counter
  * '@{b}%@{ub}@{i}var@{ui}' - NextBASIC integer variable values
 
@@ -303,7 +304,7 @@ This can be resolved by rewriting the expression, or using a character other
 than a bracket as the parameter to the instruction, for example:
 "@{b}CP 0+(1+2)*3@{ub}".
 
-See also: @{" EQU " LINK EQU}, @{" LET " LINK LET}, @{" VAR " LINK VAR}
+See also: @{" LET " LINK LET}, @{" VAR " LINK VAR}
 @----------------------------------------------------------------------------
 @node PSEUDO_OPS
 @{r}.asm inline assembler
