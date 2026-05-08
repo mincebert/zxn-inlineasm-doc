@@ -221,7 +221,7 @@ the entire program so can be referenced from anywhere directly.
 The entire name has the following format, limited to a maximum of 15 characters
 in total:
 
- {@{b}a@{ub}..@{b}z@{ub}}{@{b}.@{ub} @{b}_@{ub} @{b}a@{ub}..@{b}z@{ub} @{b}0@{ub}..@{b}9@{ub}}*                (* = zero or more occurrences)
+ {@{b}a@{ub}..@{b}z@{ub}}{@{b}.@{ub}|@{b}_@{ub}|@{b}a@{ub}..@{b}z@{ub}|@{b}0@{ub}..@{b}9@{ub}}*                (* = zero or more occurrences)
 
 @{h2}Local labels
 
@@ -231,7 +231,7 @@ code) and ends with the next global label.
 
 The entire name has the format:
 
- @{b}.@{ub}{@{b}.@{ub} @{b}_@{ub} @{b}a@{ub}..@{b}z@{ub} @{b}0@{ub}..@{b}9@{ub}}+                     (+ = one or more occurrences)
+ @{b}.@{ub}{@{b}.@{ub}|@{b}_@{ub}|@{b}a@{ub}..@{b}z@{ub}|@{b}0@{ub}..@{b}9@{ub}}+                     (+ = one or more occurrences)
 
 The entire name, including the global label used at the beginning of the scope,
 is limited to 15 characters.

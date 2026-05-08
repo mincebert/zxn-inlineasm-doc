@@ -204,7 +204,7 @@ the entire program so can be referenced from anywhere directly.
 The entire name has the following format, limited to a maximum of 15 characters
 in total:
 
- {a..z}{. _ a..z 0..9}*                (* = zero or more occurrences)
+ {a..z}{.|_|a..z|0..9}*                (* = zero or more occurrences)
 
 Local labels
 
@@ -214,7 +214,7 @@ code) and ends with the next global label.
 
 The entire name has the format:
 
- .{. _ a..z 0..9}+                     (+ = one or more occurrences)
+ .{.|_|a..z|0..9}+                     (+ = one or more occurrences)
 
 The entire name, including the global label used at the beginning of the scope,
 is limited to 15 characters.
