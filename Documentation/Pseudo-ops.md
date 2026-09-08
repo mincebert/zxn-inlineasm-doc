@@ -14,6 +14,7 @@
 [DISPLAY](#display)
 [EQU](#equ)
 [IF/ELSE/END](#ifelseend)
+[INCBIN](#incbin)
 [INCLUDE](#include)
 [LET](#let)
 [NBRK](#brk)
@@ -184,6 +185,14 @@ In the following example the register A will be zeroed using `xor`. Changing the
   ELSE
     xor a
   ENDIF
+```
+
+## INCBIN
+Includes binary data from an external file into the current assembly stream.
+
+**Example**
+```
+INCBIN "sprite.bin"
 ```
 
 ## INCLUDE
