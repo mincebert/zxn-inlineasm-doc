@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# mkguide - builds the .gde and .txt versions from the .ugde source
+#
+# Uses the Python module zxngdefmt - https://github.com/mincebert/zxngdefmt
+
+
+python3 -m zxngdefmt asm.ugde -o .
+python3 -m zxngdefmt asm.ugde -r > asm.txt
