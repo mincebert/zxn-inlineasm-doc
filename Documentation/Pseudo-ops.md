@@ -216,6 +216,20 @@ Assign the program counter for the next instruction to be assembled to the `%p` 
 LET %p = $
 ```
 
+## OPTIONS
+Specifies various assembler options that can influence the behavior of the assembly process.
+
+|Option|Description|
+|------|-----------|
+|CASE_I|Makes the assembler case-insensitive for user identifiers. (default)|
+|CASE_S|Makes the assembler case-sensitive for user identifiers.|
+
+**Example**
+Switch the assembler to case sensitive mode
+```
+OPTIONS CASE_S
+```
+
 ## ORG
 *To avoid corrupting BASIC you should protect the target memory with CLEAR before calling the assembler, e.g. with CLEAR 32767*
 
