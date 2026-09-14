@@ -329,6 +329,7 @@ See also: @{" LET " LINK LET}, @{" VAR " LINK VAR}
  @{" DISPLAY " LINK DISPLAY}         Display information during assembly
  @{" EQU " LINK EQU}             Define a constant
  @{" IF/ELSE/ENDIF " LINK IF}   Conditional assembly
+ @{" INCBIN " LINK INCBIN}          Include a binary file during assembly
  @{" INCLUDE " LINK INCLUDE}         Include a text file during assembly
  @{" LET " LINK LET}             Set the value of a NextBASIC integer variable
  @{" NBRK " LINK NBRK}            Insert hardware breakpoint, triggering Next debugger
@@ -558,6 +559,21 @@ alternative code blocks at runtime.
 
 See also: @{" ASSERT " LINK ASSERT}
 @----------------------------------------------------------------------------
+@node INCBIN
+@{r}.asm inline assembler / Pseudo operations
+
+@{c}@{h1}INCBIN
+
+Include binary data from a separate file:
+
+ @{b}INCBIN@{ub} "@{i}file@{ui}"
+
+The raw data in @{i}file@{ui} will be inserted into the assembled output at the
+position where @{b}INCBIN@{ub} is used.  A @{" label " LINK LABELS} can be
+specified before its use to determine the address of the included data.
+
+See also: @{" INCLUDE " LINK INCLUDE}, @{" OUTPUT " LINK OUTPUT}
+@----------------------------------------------------------------------------
 @node INCLUDE
 @{r}.asm inline assembler / Pseudo operations
 
@@ -575,7 +591,7 @@ The included files are stored as plain text, without line numbers, or leading
 semicolons but, otherwise, must be in a format supported by the assembler in a
 NextBASIC program.  See @{" line format " LINK FORMAT}.
 
-See also:
+See also: @{" INCBIN " LINK INCBIN},
 @{" OUTPUT " LINK OUTPUT}, @{" Assembling code from a file " LINK ASM_FILE}
 @----------------------------------------------------------------------------
 @node LET

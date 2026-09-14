@@ -316,6 +316,7 @@ Pseudo operations
  <DISPLAY>         Display information during assembly
  <EQU>             Define a constant
  <IF/ELSE/ENDIF>   Conditional assembly
+ <INCBIN>          Include a binary file during assembly
  <INCLUDE>         Include a text file during assembly
  <LET>             Set the value of a NextBASIC integer variable
  <NBRK>            Insert hardware breakpoint, triggering Next debugger
@@ -548,6 +549,22 @@ alternative code blocks at runtime.
 
 See also: <ASSERT>
 
+---[ INCBIN ]------------------------------------------------------------------
+
+.asm inline assembler / Pseudo operations
+
+INCBIN
+
+Include binary data from a separate file:
+
+ INCBIN "file"
+
+The raw data in file will be inserted into the assembled output at the position
+where INCBIN is used.  A <label> can be specified before its use to determine
+the address of the included data.
+
+See also: <INCLUDE>, <OUTPUT>
+
 ---[ INCLUDE ]-----------------------------------------------------------------
 
 .asm inline assembler / Pseudo operations
@@ -565,7 +582,7 @@ The included files are stored as plain text, without line numbers, or leading
 semicolons but, otherwise, must be in a format supported by the assembler in a
 NextBASIC program.  See <line format>.
 
-See also: <OUTPUT>, <Assembling code from a file>
+See also: <INCBIN>, <OUTPUT>, <Assembling code from a file>
 
 ---[ LET ]---------------------------------------------------------------------
 
