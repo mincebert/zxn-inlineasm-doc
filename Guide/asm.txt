@@ -319,6 +319,7 @@ Pseudo operations
  <INCLUDE>         Include a text file during assembly
  <LET>             Set the value of a NextBASIC integer variable
  <NBRK>            Insert hardware breakpoint, triggering Next debugger
+ <OPTIONS>         Select assembler configuration option
  <ORG>             Set the base address for label calculation
  <OUTPUT>          Write assembled code to a file
  <RELOC_COUNT>     Return the number of relocations tracked.
@@ -501,6 +502,8 @@ The format for displaying numbers can be altered with switches:
 
 When the format is changed, it will stay in effect until altered again.
 
+See also: <OPTIONS>
+
 ---[ EQU ]---------------------------------------------------------------------
 
 .asm inline assembler / Pseudo operations
@@ -608,6 +611,26 @@ This will trigger the NextZXOS debugger, equivalent to the assembly instruction
 NEXTREG 2,8 (or REG 2,8 in NextBASIC).
 
 See also: <ASSERT>, <BRK>
+
+---[ OPTIONS ]-----------------------------------------------------------------
+
+.asm inline assembler / Pseudo operations
+
+OPTIONS
+
+Select an assembler configuration option:
+
+ OPTIONS option
+
+Operations affect the behaviour of the assembler and enable, disable or change
+settings.  Currently available options are:
+
+ option   Effect
+ ------   -------------------------------------------------------------------
+ CASE_S   Label names are case-sensitive.
+ CASE_I   Label names are case-insensitive (default).
+
+See also: <DISPLAY>
 
 ---[ ORG ]---------------------------------------------------------------------
 

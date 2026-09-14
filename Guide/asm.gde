@@ -340,6 +340,7 @@ See also: @{" LET " LINK LET}, @{" VAR " LINK VAR}
  @{" INCLUDE " LINK INCLUDE}         Include a text file during assembly
  @{" LET " LINK LET}             Set the value of a NextBASIC integer variable
  @{" NBRK " LINK NBRK}            Insert hardware breakpoint, triggering Next debugger
+ @{" OPTIONS " LINK OPTIONS}         Select assembler configuration option
  @{" ORG " LINK ORG}             Set the base address for label calculation
  @{" OUTPUT " LINK OUTPUT}          Write assembled code to a file
  @{" RELOC_COUNT " LINK RELOC}     Return the number of relocations tracked.
@@ -533,6 +534,8 @@ The format for displaying numbers can be altered with switches:
  @{b}/C@{ub}       Character mode - uses the least significant byte as an ASCII value.
 
 When the format is changed, it will stay in effect until altered again.
+
+See also: @{" OPTIONS " LINK OPTIONS}
 @-------------------------------------------------------------------------------
 @node EQU
 @prev DISPLAY
@@ -637,7 +640,7 @@ See also: @{" EQU " LINK EQU}
 @-------------------------------------------------------------------------------
 @node NBRK
 @prev LET
-@next ORG
+@next OPTIONS
 @toc PSEUDO_OPS
 @{r}.asm inline assembler / Pseudo operations
 
@@ -652,8 +655,30 @@ This will trigger the NextZXOS debugger, equivalent to the assembly instruction
 
 See also: @{" ASSERT " LINK ASSERT}, @{" BRK " LINK BRK}
 @-------------------------------------------------------------------------------
-@node ORG
+@node OPTIONS
 @prev NBRK
+@next ORG
+@toc PSEUDO_OPS
+@{r}.asm inline assembler / Pseudo operations
+
+@{c}@{h1}OPTIONS
+
+Select an assembler configuration option:
+
+ @{b}OPTIONS@{ub} @{i}option@{ui}
+
+Operations affect the behaviour of the assembler and enable, disable or change
+settings.  Currently available options are:
+
+ @{i}option@{ui}   Effect
+ ------   -------------------------------------------------------------------
+ @{b}CASE_S@{ub}   Label names are case-sensitive.
+ @{b}CASE_I@{ub}   Label names are case-insensitive (default).
+
+See also: @{" DISPLAY " LINK DISPLAY}
+@-------------------------------------------------------------------------------
+@node ORG
+@prev OPTIONS
 @next OUTPUT
 @toc PSEUDO_OPS
 @{r}.asm inline assembler / Pseudo operations
