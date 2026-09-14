@@ -644,8 +644,8 @@ settings.  Currently available options are:
 
  option   Effect
  ------   -------------------------------------------------------------------
- CASE_S   Label names are case-sensitive.
  CASE_I   Label names are case-insensitive (default).
+ CASE_S   Label names are case-sensitive.
 
 See also: <DISPLAY>
 

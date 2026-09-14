@@ -691,8 +691,8 @@ settings.  Currently available options are:
 
  @{i}option@{ui}   Effect
  ------   -------------------------------------------------------------------
- @{b}CASE_S@{ub}   Label names are case-sensitive.
  @{b}CASE_I@{ub}   Label names are case-insensitive (default).
+ @{b}CASE_S@{ub}   Label names are case-sensitive.
 
 See also: @{" DISPLAY " LINK DISPLAY}
 @-------------------------------------------------------------------------------
