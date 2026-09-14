@@ -206,7 +206,10 @@ A label is identified as such, and not an instruction or
 line, with no leading spaces.
 
 A label can optionally be followed by a '@{b}:@{ub}' for readability, but this
-has no effect on the name.  Label names are case-insensitive.
+has no effect on the name.
+
+Label names are case-insensitive by default.  This can changed using the
+@{" OPTIONS " LINK OPTIONS} pseudo operation.
 
 @{h2}Global labels
 
@@ -656,7 +659,7 @@ settings.  Currently available options are:
  @{b}CASE_I@{ub}   Label names are case-insensitive (default).
  @{b}CASE_S@{ub}   Label names are case-sensitive.
 
-See also: @{" DISPLAY " LINK DISPLAY}
+See also: @{" DISPLAY " LINK DISPLAY}, @{" Labels " LINK LABELS}
 @----------------------------------------------------------------------------
 @node ORG
 @{r}.asm inline assembler / Pseudo operations

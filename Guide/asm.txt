@@ -194,7 +194,10 @@ A label is identified as such, and not an instruction or <pseudo operation> by
 appearing at the beginning of a line, with no leading spaces.
 
 A label can optionally be followed by a ':' for readability, but this has no
-effect on the name.  Label names are case-insensitive.
+effect on the name.
+
+Label names are case-insensitive by default.  This can changed using the
+<OPTIONS> pseudo operation.
 
 Global labels
 
@@ -647,7 +650,7 @@ settings.  Currently available options are:
  CASE_I   Label names are case-insensitive (default).
  CASE_S   Label names are case-sensitive.
 
-See also: <DISPLAY>
+See also: <DISPLAY>, <Labels>
 
 ---[ ORG ]---------------------------------------------------------------------
 
