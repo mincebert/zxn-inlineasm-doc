@@ -803,11 +803,13 @@ Index
  <File assembly>
  <Format (line)>
  <IF ... ELSE ... ENDIF>
+ <INCBIN>
  <INCLUDE>
  <Inline assembly>
  <Labels>
  <LET>
  <NBRK>
+ <OPTIONS>
  <ORG>
  <OUTPUT>
  <Pseudo operations>

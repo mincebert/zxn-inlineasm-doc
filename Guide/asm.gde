@@ -861,11 +861,13 @@ calculation, this will be variable).
  @{" File assembly " LINK ASM_FILE}
  @{" Format (line) " LINK FORMAT}
  @{" IF ... ELSE ... ENDIF " LINK IF}
+ @{" INCBIN " LINK INCBIN}
  @{" INCLUDE " LINK INCLUDE}
  @{" Inline assembly " LINK ASM_INLINE}
  @{" Labels " LINK LABELS}
  @{" LET " LINK LET}
  @{" NBRK " LINK NBRK}
+ @{" OPTIONS " LINK OPTIONS}
  @{" ORG " LINK ORG}
  @{" OUTPUT " LINK OUTPUT}
  @{" Pseudo operations " LINK PSEUDO_OPS}
