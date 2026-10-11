@@ -216,6 +216,14 @@ Assign the program counter for the next instruction to be assembled to the `%p` 
 LET %p = $
 ```
 
+## MAP
+Directs the assembler to generate a map file containing information about the assembled code, such as label addresses and equate values
+
+**Example**
+```
+MAP "output.map"
+```
+
 ## OPTIONS
 Specifies various assembler options that can influence the behavior of the assembly process.
 
