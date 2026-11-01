@@ -17,6 +17,7 @@
 [INCBIN](#incbin)
 [INCLUDE](#include)
 [LET](#let)
+[MAP](#map)
 [NBRK](#brk)
 [ORG](#org)
 [OUTPUT](#output)
@@ -25,6 +26,7 @@
 [RELOC_START](#reloc_start)
 [RELOC_TABLE](#reloc_table)
 [SAVENEX](#savenex)
+[SLD](#sld)
 [VAR](#var)
 
 # $ (dollar)
@@ -285,6 +287,16 @@ Syntax:
 ```
 SAVENEX "filename.nex",start_address,stack_address[,required_ram][,entry_bank]
 ```
+
+## SLD
+Directs the `.asm` dot command to generate a source-level debug file. See
+[Debug files](Debug-files.md) for details about its contents and behavior.
+
+**Example**
+```
+SLD "output.sld"
+```
+
 ## VAR
 Creates a variable whose value is allowed to vary between assembly passes.
 
@@ -310,7 +322,6 @@ lbl   VAR $
       DB 1,2,3,4
 LEN   EQU $-lbl
 ```
-
 
 
 
