@@ -8,6 +8,7 @@ Documentation repository for the [NextBASIC Inline Assembler](https://taylorza.i
 * [Assembling into a memory bank](Documentation/Assemble-to-bank.md)
 * [Assembling directly to a file](Documentation/Assemble-to-file.md)
 * [Conditional Assembly](Documentation/Conditional-Assembly.md)
+* [Debug files](Documentation/Debug-files.md)
 * [Macros](Documentation/Macros.md)
 * [Pseudo-ops](Documentation/Pseudo-ops.md)
 * [Expressions](Documentation/Expressions.md)
@@ -21,4 +22,3 @@ Documentation repository for the [NextBASIC Inline Assembler](https://taylorza.i
 * [Simple NEX File](Examples/NEX-Hello.md)
 ### Create NextZXOS Drivers
 * [Simple Printer Driver](Examples/SimplePrinterDriver.md)
-
