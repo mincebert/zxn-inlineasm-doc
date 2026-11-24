@@ -5,5 +5,4 @@
 # Uses the Python module zxngdefmt - https://github.com/mincebert/zxngdefmt
 
 
-python3 -m zxngdefmt asm.ugde -o .
-python3 -m zxngdefmt asm.ugde -r > asm.txt
+python3 -m zxngdefmt asm.ugde -o . -t asm.txt

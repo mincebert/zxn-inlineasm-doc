@@ -1,9 +1,9 @@
 
 ---[ MAIN ]--------------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-.asm inline assembler guide
+                          .asm inline assembler guide
 
 .asm is an assembler which can assemble code embedded in a NextBASIC program, or
 from a source text file.
@@ -32,9 +32,9 @@ https://github.com/taylorza/zxn-inlineasm-doc/blob/main/README.md
 
 ---[ ASM_INLINE ]--------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Assembling inline code in a NextBASIC program
+                 Assembling inline code in a NextBASIC program
 
 To assemble code embedded in a NextBASIC program, .asm is used as a command, for
 example:
@@ -71,9 +71,9 @@ See also: <INCLUDE>, <Target locations>
 
 ---[ ASM_FILE ]----------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Assembling code from a file
+                          Assembling code from a file
 
 In addition to <assembling code inline in NextBASIC programs>, .asm can also
 assemble code from a file, by providing it with the name of that file as an
@@ -98,9 +98,9 @@ See also: <INCLUDE>, <OUTPUT>
 
 ---[ FORMAT ]------------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Line format
+                                  Line format
 
 Lines of assembly embedded within NextBASIC programs using .asm have the form:
 
@@ -147,9 +147,9 @@ specified, once a comment has been started.
 
 ---[ TARGET ]------------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Assembly target
+                                Assembly target
 
 The assembler can write the assembled code to one of three main target
 locations:
@@ -177,9 +177,9 @@ pseudo operation.
 
 ---[ LABELS ]------------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Labels
+                                     Labels
 
 The assembler supports three main types of label:
 
@@ -247,9 +247,9 @@ See also: <Line format>, <MAP>, <VAR>
 
 ---[ EXPRESSIONS ]-------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Expressions
+                                  Expressions
 
 In all places where the assembler accepts a value, an expression can be used to
 calculate the number.
@@ -301,9 +301,9 @@ See also: <LET>, <MAP>, <VAR>
 
 ---[ PSEUDO_OPS ]--------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Pseudo operations
+                               Pseudo operations
 
  Operation         Meaning
  ---------------   -----------------------------------------------------
@@ -336,9 +336,9 @@ Pseudo operations
 
 ---[ ALIGN ]-------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-ALIGN
+                                     ALIGN
 
 Pseudo operation to align the address of the next instruction:
 
@@ -353,9 +353,9 @@ See also: <DS (define)>
 
 ---[ ASSERT ]------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-ASSERT
+                                     ASSERT
 
 Abort assemly if an expression evaluates to false:
 
@@ -368,9 +368,9 @@ See also: <IF ... ELSE ... ENDIF>
 
 ---[ BANK ]--------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-BANK
+                                      BANK
 
 Set the target bank and offset for assembler output:
 
@@ -426,9 +426,9 @@ See also: <OUTPUT>
 
 ---[ BRK ]---------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-BRK
+                                      BRK
 
 Insert a CSpect BREAK instruction:
 
@@ -440,9 +440,9 @@ See also: <ASSERT>, <NBRK>
 
 ---[ DX ]----------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-Dx (define)
+                                  Dx (define)
 
 Define a block of data:
 
@@ -485,9 +485,9 @@ See also: <ALIGN>, <INCBIN>
 
 ---[ DISPLAY ]-----------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-DISPLAY
+                                    DISPLAY
 
 Display information during the assembly process:
 
@@ -511,9 +511,9 @@ See also: <OPTIONS>
 
 ---[ EQU ]---------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-EQU
+                                      EQU
 
 Define a value which is constant between passes:
 
@@ -534,9 +534,9 @@ See also: <LET>, <MAP>
 
 ---[ IF ]----------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-IF ... ELSE ... ENDIF
+                             IF ... ELSE ... ENDIF
 
 Assemble a block of code conditionally:
 
@@ -559,9 +559,9 @@ See also: <ASSERT>
 
 ---[ INCBIN ]------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-INCBIN
+                                     INCBIN
 
 Include binary data from a separate file:
 
@@ -575,9 +575,9 @@ See also: <Dx (define)>, <INCLUDE>, <OUTPUT>
 
 ---[ INCLUDE ]-----------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-INCLUDE
+                                    INCLUDE
 
 Include code from a separate file:
 
@@ -594,9 +594,9 @@ See also: <INCBIN>, <OUTPUT>, <Assembling code from a file>
 
 ---[ LET ]---------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-LET
+                                      LET
 
 Assign a value to a NextBASIC integer variable:
 
@@ -624,9 +624,9 @@ See also: <EQU>
 
 ---[ MAP ]---------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-MAP
+                                      MAP
 
 Write map file of symbols, values and types:
 
@@ -640,9 +640,9 @@ command in the code, even if they are defined later.
 
 ---[ NBRK ]--------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-NBRK
+                                      NBRK
 
 Insert a hardware breakpoint:
 
@@ -655,9 +655,9 @@ See also: <ASSERT>, <BRK>
 
 ---[ OPTIONS ]-----------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-OPTIONS
+                                    OPTIONS
 
 Select an assembler configuration option:
 
@@ -675,9 +675,9 @@ See also: <DISPLAY>, <Labels>
 
 ---[ ORG ]---------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-ORG
+                                      ORG
 
 Set the address at that point in assembly:
 
@@ -710,9 +710,9 @@ addr.
 
 ---[ OUTPUT ]------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-OUTPUT
+                                     OUTPUT
 
 Write assembled code to a file:
 
@@ -728,9 +728,9 @@ See also: <BANK>, <INCLUDE>, <ORG>, <SAVENEX>
 
 ---[ RELOC ]-------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-RELOC_x (relocation table)
+                           RELOC_x (relocation table)
 
 Generate relocation information for NextZXOS drivers:
 
@@ -754,9 +754,9 @@ documentation.
 
 ---[ SAVENEX ]-----------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-SAVENEX
+                                    SAVENEX
 
 Generate a ".nex" file from the assembled code:
 
@@ -786,9 +786,9 @@ See also: <OUTPUT>
 
 ---[ VAR ]---------------------------------------------------------------------
 
-.asm inline assembler / Pseudo operations
+                                       .asm inline assembler / Pseudo operations
 
-VAR
+                                      VAR
 
 Declare a value which can change between passes:
 
@@ -814,9 +814,9 @@ See also: <LET>, <MAP>
 
 ---[ INDEX ]-------------------------------------------------------------------
 
-.asm inline assembler
+                                                           .asm inline assembler
 
-Index
+                                     Index
 
  <ALIGN>
  <ASSERT>
